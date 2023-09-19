@@ -2,7 +2,7 @@ buildscript {
     repositories {
         google()
         mavenCentral()
-
+        maven { url 'https://jitpack.io' }
     }
 
     dependencies {
@@ -39,10 +39,10 @@ android {
 repositories {
     google()
     mavenCentral()
+    maven { url 'https://jitpack.io' }
 }
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    // TODO: migrate to androidx
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
 }
